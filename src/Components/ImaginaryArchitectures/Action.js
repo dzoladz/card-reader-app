@@ -14,7 +14,7 @@ const ImaginaryArchitecturesAction = () => {
 
   return (
     <Container>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center extra-top-margin">
         <Col xs={6} sm={4} md={3}>
           <SingleCard
             src={cardDeck[0].image}
