@@ -28,9 +28,15 @@ const Provider = ({ children }) => {
 
   const imaginaryArchitecturesAction = () => {
   setIACardDeck(shuffle(IAcardDeck));
-    setShowIAP(true);
+  if (showIAA === false) {
     setShowIAA(true);
-  };
+  } else {
+    setShowIAA(false);
+    setTimeout(()=> {
+      setShowIAA(true)
+    }, 0);
+   };
+ };
 
   return (
     <Context.Provider
