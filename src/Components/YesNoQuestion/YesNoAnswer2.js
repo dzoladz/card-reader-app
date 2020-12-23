@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const YesNoAnswer2 = () => {
-  const { showYNA2, cardDeck, showCardModal, userQuestion } = useContext(
+  const { showYNA2, cardDeck } = useContext(
     Context
   );
 
@@ -21,12 +21,9 @@ const YesNoAnswer2 = () => {
             alt={cardDeck[0].name}
             delay={0}
             value={cardDeck[0].id}
-            onClick={() => showCardModal(cardDeck[0])}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">
-          <p>Your question: {userQuestion}</p>
-          <hr />
           <p>{cardDeck[0].yesno}</p>
         </Col>
       </Row>
