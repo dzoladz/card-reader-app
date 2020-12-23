@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import cardsJSON from "./Components/JSON/deck.json";
+import IAcardsJSON from "./Components/JSON/deckIA.json";
 
 const Context = React.createContext({});
 
 const Provider = ({ children }) => {
-  const [cardDeck, setCardDeck] = useState([...cardsJSON]);
+  const [IAcardDeck, setIACardDeck] = useState([...IAcardsJSON]);
   const [showIAP, setShowIAP] = useState(false);
   const [showIAA, setShowIAA] = useState(false);
 
@@ -27,7 +27,7 @@ const Provider = ({ children }) => {
   };
 
   const imaginaryArchitecturesAction = () => {
-  setCardDeck(shuffle(cardDeck));
+  setIACardDeck(shuffle(IAcardDeck));
     setShowIAP(true);
     setShowIAA(true);
   };
@@ -35,11 +35,12 @@ const Provider = ({ children }) => {
   return (
     <Context.Provider
       value={{
-        cardDeck,
         showIAP,
         showIAA,
         imaginaryArchitecturesPrompt,
-        imaginaryArchitecturesAction
+        imaginaryArchitecturesAction,
+        IAcardDeck,
+        setIACardDeck
       }}
     >
       {children}
