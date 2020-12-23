@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/card-reader-app/precache-manifest.a373813937c36b12b557da8ca03a58b0.js"
+  "/card-reader-app/precache-manifest.5370437ef4ebfa06fdfd44bfbd945fd7.js"
 );
 
 self.addEventListener('message', (event) => {
