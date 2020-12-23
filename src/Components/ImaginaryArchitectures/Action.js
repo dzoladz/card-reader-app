@@ -3,12 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
-const YesNoAnswer2 = () => {
-  const { showYNA2, cardDeck } = useContext(
+const ImaginaryArchitecturesAction = () => {
+  const { showIAA, cardDeck } = useContext(
     Context
   );
 
-  if (!showYNA2) {
+  if (!showIAA) {
     return null;
   }
 
@@ -31,4 +31,4 @@ const YesNoAnswer2 = () => {
   );
 };
 
-export default YesNoAnswer2;
+export default ImaginaryArchitecturesAction;

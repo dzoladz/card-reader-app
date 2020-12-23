@@ -5,8 +5,9 @@ const Context = React.createContext({});
 
 const Provider = ({ children }) => {
   const [cardDeck, setCardDeck] = useState([...cardsJSON]);
-  const [showYNA2, setShowYNA2] = useState(false);
-  const [showDCZ, setShowDCZ] = useState(false);
+  const [showIAP, setShowIAP] = useState(false);
+  const [showIAA, setShowIAA] = useState(false);
+
 
   const shuffle = array => {
     let i = 0;
@@ -21,24 +22,24 @@ const Provider = ({ children }) => {
     return array;
   };
 
-  const yesNoAnswer2 = () => {
-  setCardDeck(shuffle(cardDeck));
-    setShowDCZ(true);
-    setShowYNA2(true);
+  const imaginaryArchitecturesPrompt = () => {
+    setShowIAP(true);
   };
 
-  const exploreTheDeck2 = () => {
-    setShowDCZ(true);
+  const imaginaryArchitecturesAction = () => {
+  setCardDeck(shuffle(cardDeck));
+    setShowIAP(true);
+    setShowIAA(true);
   };
 
   return (
     <Context.Provider
       value={{
         cardDeck,
-        showYNA2,
-        showDCZ,
-        yesNoAnswer2,
-        exploreTheDeck2
+        showIAP,
+        showIAA,
+        imaginaryArchitecturesPrompt,
+        imaginaryArchitecturesAction
       }}
     >
       {children}

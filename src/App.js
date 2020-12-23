@@ -2,16 +2,15 @@ import React from "react";
 import { Provider } from "./AppContext";
 import "./App.css";
 import Header from "./Components/Header/Header";
-import YesNoAnswer2 from "./Components/YesNoQuestion/YesNoAnswer2";
-import ExploreTest from "./Components/ExploreCards/ExploreTest";
-
+import ImaginaryArchitecturesPrompt from "./Components/ImaginaryArchitectures/Prompt";
+import ImaginaryArchitecturesAction from "./Components/ImaginaryArchitectures/Action";
 
 function App() {
   return (
     <Provider>
       <Header />
-      <ExploreTest />
-      <YesNoAnswer2 />
+      <ImaginaryArchitecturesPrompt />
+      <ImaginaryArchitecturesAction />
     </Provider>
   );
 }

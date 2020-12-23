@@ -4,12 +4,12 @@ import Button from "../Button/Button";
 import { Context } from "../../AppContext";
 
 const Header = () => {
-  const { exploreTheDeck2 } = useContext(Context);
+  const { imaginaryArchitecturesPrompt } = useContext(Context);
 
   return (
     <Jumbotron fluid className="jumbotron text-center p-3">
       <h1 className="display-4 text-light">Speculative Card Deck</h1>
-      <Button name="Explore the Deck2" onClick={exploreTheDeck2} />
+      <Button name="Imaginary Architectures" onClick={imaginaryArchitecturesPrompt} />
     </Jumbotron>
   );
 };

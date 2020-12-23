@@ -3,10 +3,10 @@ import { Container, Row } from "react-bootstrap";
 import Button from "../Button/Button";
 import { Context } from "../../AppContext";
 
-const ExploreTest = () => {
-  const { showDCZ, yesNoAnswer2 } = useContext(Context);
+const ImaginaryArchitecturesPrompt = () => {
+  const { showIAP, imaginaryArchitecturesAction } = useContext(Context);
 
-    if (!showDCZ) {
+    if (!showIAP) {
     return null;
   }
 
@@ -18,10 +18,10 @@ const ExploreTest = () => {
       </p>
       </Row>
       <Row className="justify-content-center animated fadeIn slower delay-3s">
-      <Button name="Draw One Card" onClick={yesNoAnswer2} />
+      <Button name="Draw Card" onClick={imaginaryArchitecturesAction} />
       </Row>
     </Container>
   );
 };
 
-export default ExploreTest;
+export default ImaginaryArchitecturesPrompt;
