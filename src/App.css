@@ -6,6 +6,10 @@
   background-color: #22222211;
 }
 
+.text {
+  color: white;
+}
+
 .tarot-read {
   border: 2px solid #ffffff;
   border-radius: 10px;

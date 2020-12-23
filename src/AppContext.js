@@ -8,7 +8,9 @@ const Provider = ({ children }) => {
   const [showTCD, setShowTCD] = useState(false);
   const [showYNQ, setShowYNQ] = useState(false);
   const [showYNA, setShowYNA] = useState(false);
+  const [showYNA2, setShowYNA2] = useState(false);
   const [showETT, setShowETT] = useState(false);
+  const [showDCZ, setShowDCZ] = useState(false);
   const [userQuestion, setUserQuestion] = useState("");
   const [modalShow, setModalShow] = useState(false);
   const [modalCard, setModalCard] = useState([]);
@@ -28,21 +30,6 @@ const Provider = ({ children }) => {
     return array;
   };
 
-  const threeCardDraw = () => {
-    setCardDeck(shuffle(cardDeck));
-    if (showTCD === false) {
-      setShowYNQ(false);
-      setShowYNA(false);
-      setShowETT(false);
-      setShowTCD(true);  
-    } else {
-      setShowTCD(false);
-      setTimeout(()=> { // this is a hack to set state to false to force a re-render
-        setShowTCD(true)
-      }, 0);
-    };
-  };
-
   const yesNoQuestion = () => {
     setCardDeck(shuffle(cardDeck));
     setUserQuestion("");
@@ -59,6 +46,14 @@ const Provider = ({ children }) => {
     setShowYNA(true);
   };
 
+  const yesNoAnswer2 = () => {
+    setShowTCD(false);
+    setShowYNQ(false);
+    setShowETT(false);
+    setShowDCZ(true);
+    setShowYNA2(true);
+  };
+
   const handleInputChange = event => setUserQuestion(event.target.value);
 
   const exploreTheDeck = () => {
@@ -66,6 +61,14 @@ const Provider = ({ children }) => {
     setShowYNQ(false);
     setShowYNA(false);
     setShowETT(true);
+  };
+
+  const exploreTheDeck2 = () => {
+    setShowDCZ(true);
+    setShowTCD(false);
+    setShowYNQ(false);
+    setShowYNA(false);
+    setShowETT(false);
   };
 
   const handleClose = () => setModalShow(false);
@@ -84,17 +87,20 @@ const Provider = ({ children }) => {
         showTCD,
         showYNQ,
         showYNA,
+        showYNA2,
         showETT,
+        showDCZ,
         userQuestion,
         modalShow,
         modalCard,
         displaySuit,
         setDisplaySuit,
-        threeCardDraw,
         yesNoQuestion,
         yesNoAnswer,
+        yesNoAnswer2,
         handleInputChange,
         exploreTheDeck,
+        exploreTheDeck2,
         handleClose,
         handleShow,
         showCardModal
