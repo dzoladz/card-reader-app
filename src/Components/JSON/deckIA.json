@@ -24,5 +24,10 @@
     "name": "Card 4",
     "image": "images/card-deck/4.jpg",
     "action": "In a group, individually draw your library using only symbols. Swap with your neighbor and attempt to describe/label the library with words. What seemed natural? What was missed? What was specific and what was ambiguous?"
+  }, {
+    "id": 5,
+    "name": "Card 5",
+    "image": "images/card-deck/5.jpg",
+    "action": "Choose books and other objects in the library based on one color. Use only those objects to build or draw a new space design."
   }
 ]
