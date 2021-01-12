@@ -1,0 +1,33 @@
+[
+  {
+    "id": 0,
+    "name": "Card 0",
+    "image": "images/card-deck/0.jpg",
+    "action": ""
+  }, {
+    "id": 1,
+    "name": "Card 1",
+    "image": "images/card-deck/1.jpg",
+    "action": ""
+  }, {
+    "id": 2,
+    "name": "Card 2",
+    "image": "images/card-deck/2.jpg",
+    "action": ""
+  }, {
+    "id": 3,
+    "name": "Card 3",
+    "image": "images/card-deck/3.jpg",
+    "action": ""
+  }, {
+    "id": 4,
+    "name": "Card 4",
+    "image": "images/card-deck/4.jpg",
+    "action": ""
+  }, {
+    "id": 5,
+    "name": "Card 5",
+    "image": "images/card-deck/5.jpg",
+    "action": ""
+  }
+]

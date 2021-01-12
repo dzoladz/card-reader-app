@@ -8,6 +8,8 @@ import IAgreePrompt from "./Components/IAgree/Prompt";
 import IAgreeAction from "./Components/IAgree/Action";
 import UmbertoEcoPrompt from "./Components/UmbertoEco/Prompt";
 import UmbertoEcoAction from "./Components/UmbertoEco/Action";
+import PatentDependingPrompt from "./Components/PatentDepending/Prompt";
+import PatentDependingAction from "./Components/PatentDepending/Action";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <IAgreeAction />
       <UmbertoEcoPrompt />
       <UmbertoEcoAction />
+      <PatentDependingPrompt />
+      <PatentDependingAction />
     </Provider>
   );
 }

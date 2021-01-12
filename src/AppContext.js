@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import IAcardsJSON from "./Components/JSON/deckIA.json";
 import IGcardsJSON from "./Components/JSON/deckIG.json";
 import UEcardsJSON from "./Components/JSON/deckUE.json";
+import PDcardsJSON from "./Components/JSON/deckPD.json";
 
 const Context = React.createContext({});
 
@@ -9,12 +10,15 @@ const Provider = ({ children }) => {
   const [IAcardDeck, setIACardDeck] = useState([...IAcardsJSON]);
   const [IGcardDeck, setIGCardDeck] = useState([...IGcardsJSON]);
   const [UEcardDeck, setUECardDeck] = useState([...UEcardsJSON]);
+  const [PDcardDeck, setPDCardDeck] = useState([...PDcardsJSON]);
   const [showIAP, setShowIAP] = useState(false);
   const [showIAA, setShowIAA] = useState(false);
   const [showIGP, setShowIGP] = useState(false);
   const [showIGA, setShowIGA] = useState(false);
   const [showUEP, setShowUEP] = useState(false);
   const [showUEA, setShowUEA] = useState(false);
+  const [showPDP, setShowPDP] = useState(false);
+  const [showPDA, setShowPDA] = useState(false);
 
 
   const shuffle = array => {
@@ -35,6 +39,8 @@ const Provider = ({ children }) => {
     setShowIGA(false);
     setShowUEP(false);
     setShowUEA(false);
+    setShowPDP(false);
+    setShowPDA(false);
     setShowIAP(true);
   };
 
@@ -56,6 +62,8 @@ const Provider = ({ children }) => {
     setShowIAA(false);
     setShowUEP(false);
     setShowUEA(false);
+    setShowPDP(false);
+    setShowPDA(false);
     setShowIGP(true);
   };
 
@@ -76,6 +84,8 @@ const Provider = ({ children }) => {
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
+    setShowPDP(false);
+    setShowPDA(false);
     setShowUEP(true);
   };
 
@@ -87,6 +97,27 @@ const Provider = ({ children }) => {
           setShowUEA(false);
           setTimeout(() => {
               setShowUEA(true)
+          }, 0);
+      }
+  };
+
+  const patentDependingPrompt = () => {
+    setShowIAP(false);
+    setShowIAA(false);
+    setShowIGP(false);
+    setShowUEP(false);
+    setShowUEA(false);
+    setShowPDP(true);
+  };
+
+  const patentDependingAction = () => {
+      setPDCardDeck(shuffle(PDcardDeck));
+      if (showPDA === false) {
+          setShowPDA(true);
+      } else {
+          setShowPDA(false);
+          setTimeout(() => {
+              setShowPDA(true)
           }, 0);
       }
   };
@@ -112,7 +143,13 @@ const Provider = ({ children }) => {
         umbertoEcoPrompt,
         umbertoEcoAction,
         UEcardDeck,
-        setUECardDeck
+        setUECardDeck,
+        showPDP,
+        showPDA,
+        patentDependingPrompt,
+        patentDependingAction,
+        PDcardDeck,
+        setPDCardDeck
       }}
     >
       {children}
