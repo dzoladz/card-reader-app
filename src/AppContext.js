@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import IAcardsJSON from "./Components/JSON/deckIA.json";
 import IGcardsJSON from "./Components/JSON/deckIG.json";
+import UEcardsJSON from "./Components/JSON/deckUE.json";
 
 const Context = React.createContext({});
 
 const Provider = ({ children }) => {
   const [IAcardDeck, setIACardDeck] = useState([...IAcardsJSON]);
   const [IGcardDeck, setIGCardDeck] = useState([...IGcardsJSON]);
+  const [UEcardDeck, setUECardDeck] = useState([...UEcardsJSON]);
   const [showIAP, setShowIAP] = useState(false);
   const [showIAA, setShowIAA] = useState(false);
   const [showIGP, setShowIGP] = useState(false);
   const [showIGA, setShowIGA] = useState(false);
+  const [showUEP, setShowUEP] = useState(false);
+  const [showUEA, setShowUEA] = useState(false);
 
 
   const shuffle = array => {
@@ -29,6 +33,8 @@ const Provider = ({ children }) => {
   const imaginaryArchitecturesPrompt = () => {
     setShowIGP(false);
     setShowIGA(false);
+    setShowUEP(false);
+    setShowUEA(false);
     setShowIAP(true);
   };
 
@@ -48,6 +54,8 @@ const Provider = ({ children }) => {
   const iAgreePrompt = () => {
     setShowIAP(false);
     setShowIAA(false);
+    setShowUEP(false);
+    setShowUEA(false);
     setShowIGP(true);
   };
 
@@ -59,6 +67,26 @@ const Provider = ({ children }) => {
           setShowIGA(false);
           setTimeout(() => {
               setShowIGA(true)
+          }, 0);
+      }
+  };
+
+
+  const umbertoEcoPrompt = () => {
+    setShowIAP(false);
+    setShowIAA(false);
+    setShowIGP(false);
+    setShowUEP(true);
+  };
+
+  const umbertoEcoAction = () => {
+      setUECardDeck(shuffle(UEcardDeck));
+      if (showUEA === false) {
+          setShowUEA(true);
+      } else {
+          setShowUEA(false);
+          setTimeout(() => {
+              setShowUEA(true)
           }, 0);
       }
   };
@@ -78,7 +106,13 @@ const Provider = ({ children }) => {
         iAgreePrompt,
         iAgreeAction,
         IGcardDeck,
-        setIGCardDeck
+        setIGCardDeck,
+        showUEP,
+        showUEA,
+        umbertoEcoPrompt,
+        umbertoEcoAction,
+        UEcardDeck,
+        setUECardDeck
       }}
     >
       {children}

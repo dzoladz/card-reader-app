@@ -1,0 +1,33 @@
+[
+  {
+    "id": 0,
+    "name": "Card 0",
+    "image": "images/card-deck/0.jpg",
+    "action": "Write an outline for your own speculative terrible/ideal library by describing the worst/perfect LIS systems, services and spaces (i.e. cataloging and discovery systems, circulation and access services, reference and instruction, library spaces and amenities)."
+  }, {
+    "id": 1,
+    "name": "Card 1",
+    "image": "images/card-deck/1.jpg",
+    "action": "Contemplate the effects of using ‘unqualified’ people. What could cause people to lose trust in your library? What could make people feel unsafe or exposed? What might be learned from inviting a novice into library spaces? Create a list of questions they might ask or you may ask them."
+  }, {
+    "id": 2,
+    "name": "Card 2",
+    "image": "images/card-deck/2.jpg",
+    "action": "Focus on writing a list like Eco’s specific for your particular role in your library, delving deeper into one aspect of library work (as opposed to Eco’s external and broad view)."
+  }, {
+    "id": 3,
+    "name": "Card 3",
+    "image": "images/card-deck/3.jpg",
+    "action": "Illustrate the narrative. Draw or map what a “bad library” looks like or create a LinkedIn profile for a “bad librarian.”"
+  }, {
+    "id": 4,
+    "name": "Card 4",
+    "image": "images/card-deck/4.jpg",
+    "action": "What assumptions do librarians make about information seeking behaviors that support the organization of library materials? Discuss what the ideal call number system might look like and what kind of technology or skill set would be required to create that."
+  }, {
+    "id": 5,
+    "name": "Card 5",
+    "image": "images/card-deck/5.jpg",
+    "action": "Reframe this exercise to describe the worst patrons/faculty/students/administration. How might you alter the library services/spaces to combat their problematic aspects?"
+  }
+]
