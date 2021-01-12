@@ -6,6 +6,8 @@ import ImaginaryArchitecturesPrompt from "./Components/ImaginaryArchitectures/Pr
 import ImaginaryArchitecturesAction from "./Components/ImaginaryArchitectures/Action";
 import IAgreePrompt from "./Components/IAgree/Prompt";
 import IAgreeAction from "./Components/IAgree/Action";
+import UmbertoEcoPrompt from "./Components/UmbertoEco/Prompt";
+import UmbertoEcoAction from "./Components/UmbertoEco/Action";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <ImaginaryArchitecturesAction />
       <IAgreePrompt />
       <IAgreeAction />
+      <UmbertoEcoPrompt />
+      <UmbertoEcoAction />
     </Provider>
   );
 }
