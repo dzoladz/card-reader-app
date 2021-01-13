@@ -1,0 +1,33 @@
+[
+  {
+    "id": 0,
+    "name": "Card 0",
+    "image": "images/card-deck/0.jpg",
+    "action": "Envision a library as a tech start-up. What new services are you providing that can’t be achieved in another space? What might your return on investment be?"
+  }, {
+    "id": 1,
+    "name": "Card 1",
+    "image": "images/card-deck/1.jpg",
+    "action": "Write a transcript of a reference interaction with the librarian as cashier or retailer. We might also speculate where this encounter takes place. Would we be more considerate of privacy, time, and general well being of our users?"
+  }, {
+    "id": 2,
+    "name": "Card 2",
+    "image": "images/card-deck/2.jpg",
+    "action": "Create a map that describes how a reference interaction would look with the librarian as banker. How might the space change during this exchange? Would we be more considerate of privacy, time, and general well being of our users?"
+  }, {
+    "id": 3,
+    "name": "Card 3",
+    "image": "images/card-deck/3.jpg",
+    "action": "Refer to the Occupational Outlook Handbook to imagine these jobs as library jobs. Blackout all the ideas/text/concepts that could not be applied to librarianship. Where are the similarities? Differences?"
+  }, {
+    "id": 4,
+    "name": "Card 4",
+    "image": "images/card-deck/4.jpg",
+    "action": "Don’t be frightened of cliches. Discuss the pros and cons of a library that was sponsored by a large corporation like McDonalds. What kind of ethical questions would arise? What systemic problems would become apparent? What challenges might be solved?"
+  }, {
+    "id": 5,
+    "name": "Card 5",
+    "image": "images/card-deck/5.jpg",
+    "action": "Do librarianship and art share a similar language? Create a glossary that is made up entirely of words used in both disciplines, and how they may overlap or have completely different meanings. For example, what does the word “research” mean in librarianship vs. in artistic practice?"
+  }
+]

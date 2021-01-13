@@ -10,6 +10,8 @@ import UmbertoEcoPrompt from "./Components/UmbertoEco/Prompt";
 import UmbertoEcoAction from "./Components/UmbertoEco/Action";
 import PatentDependingPrompt from "./Components/PatentDepending/Prompt";
 import PatentDependingAction from "./Components/PatentDepending/Action";
+import CultureClashPrompt from "./Components/CultureClash/Prompt";
+import CultureClashAction from "./Components/CultureClash/Action";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <UmbertoEcoAction />
       <PatentDependingPrompt />
       <PatentDependingAction />
+      <CultureClashPrompt />
+      <CultureClashAction />
     </Provider>
   );
 }
