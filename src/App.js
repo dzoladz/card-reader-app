@@ -12,6 +12,8 @@ import PatentDependingPrompt from "./Components/PatentDepending/Prompt";
 import PatentDependingAction from "./Components/PatentDepending/Action";
 import CultureClashPrompt from "./Components/CultureClash/Prompt";
 import CultureClashAction from "./Components/CultureClash/Action";
+import SlowTechnologyPrompt from "./Components/SlowTechnology/Prompt";
+import SlowTechnologyAction from "./Components/SlowTechnology/Action";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
       <PatentDependingAction />
       <CultureClashPrompt />
       <CultureClashAction />
+      <SlowTechnologyPrompt />
+      <SlowTechnologyAction />
     </Provider>
   );
 }

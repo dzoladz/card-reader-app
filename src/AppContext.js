@@ -4,6 +4,7 @@ import IGcardsJSON from "./Components/JSON/deckIG.json";
 import UEcardsJSON from "./Components/JSON/deckUE.json";
 import PDcardsJSON from "./Components/JSON/deckPD.json";
 import CCcardsJSON from "./Components/JSON/deckCC.json";
+import STcardsJSON from "./Components/JSON/deckST.json";
 
 const Context = React.createContext({});
 
@@ -13,6 +14,7 @@ const Provider = ({ children }) => {
   const [UEcardDeck, setUECardDeck] = useState([...UEcardsJSON]);
   const [PDcardDeck, setPDCardDeck] = useState([...PDcardsJSON]);
   const [CCcardDeck, setCCCardDeck] = useState([...CCcardsJSON]);
+  const [STcardDeck, setSTCardDeck] = useState([...STcardsJSON]);
   const [showIAP, setShowIAP] = useState(false);
   const [showIAA, setShowIAA] = useState(false);
   const [showIGP, setShowIGP] = useState(false);
@@ -23,6 +25,8 @@ const Provider = ({ children }) => {
   const [showPDA, setShowPDA] = useState(false);
   const [showCCP, setShowCCP] = useState(false);
   const [showCCA, setShowCCA] = useState(false);
+  const [showSTP, setShowSTP] = useState(false);
+  const [showSTA, setShowSTA] = useState(false);
 
 
   const shuffle = array => {
@@ -47,6 +51,8 @@ const Provider = ({ children }) => {
     setShowPDA(false);
     setShowCCP(false);
     setShowCCA(false);
+    setShowSTP(false);
+    setShowSTA(false);
     setShowIAP(true);
   };
 
@@ -72,6 +78,8 @@ const Provider = ({ children }) => {
     setShowPDA(false);
     setShowCCP(false);
     setShowCCA(false);
+    setShowSTP(false);
+    setShowSTA(false);
     setShowIGP(true);
   };
 
@@ -96,6 +104,8 @@ const Provider = ({ children }) => {
     setShowPDA(false);
     setShowCCP(false);
     setShowCCA(false);
+    setShowSTP(false);
+    setShowSTA(false);
     setShowUEP(true);
   };
 
@@ -119,6 +129,8 @@ const Provider = ({ children }) => {
     setShowUEA(false);
     setShowCCP(false);
     setShowCCA(false);
+    setShowSTP(false);
+    setShowSTA(false);
     setShowPDP(true);
   };
 
@@ -143,6 +155,8 @@ const Provider = ({ children }) => {
     setShowUEA(false);
     setShowPDP(false);
     setShowPDA(false);
+    setShowSTP(false);
+    setShowSTA(false);
     setShowCCP(true);
   };
 
@@ -157,6 +171,33 @@ const Provider = ({ children }) => {
           }, 0);
       }
   };
+
+
+    const slowTechnologyPrompt = () => {
+    setShowIAP(false);
+    setShowIAA(false);
+    setShowIGP(false);
+    setShowUEP(false);
+    setShowUEA(false);
+    setShowPDP(false);
+    setShowPDA(false);
+    setShowCCP(false);
+    setShowCCA(false);
+    setShowSTP(true);
+  };
+
+  const slowTechnologyAction = () => {
+      setSTCardDeck(shuffle(STcardDeck));
+      if (showSTA === false) {
+          setShowSTA(true);
+      } else {
+          setShowSTA(false);
+          setTimeout(() => {
+              setShowSTA(true)
+          }, 0);
+      }
+  };
+
 
 
   return (
@@ -191,7 +232,13 @@ const Provider = ({ children }) => {
         cultureClashPrompt,
         cultureClashAction,
         CCcardDeck,
-        setCCCardDeck
+        setCCCardDeck,
+        showSTP,
+        showSTA,
+        slowTechnologyPrompt,
+        slowTechnologyAction,
+        STcardDeck,
+        setSTCardDeck
       }}
     >
       {children}

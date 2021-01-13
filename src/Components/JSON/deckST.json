@@ -1,0 +1,33 @@
+[
+  {
+    "id": 0,
+    "name": "Card 0",
+    "image": "images/card-deck/0.jpg",
+    "action": "Select a common library technology process (searching the catalog, accessing an article, requesting an interlibrary loan, self-checkout, etc) and slow it down for the user. Write step-by-step instructions or quickly draw a cartoon narrative of the process. How many steps of the process can you make visible to the user? Which are disposable?"
+  }, {
+    "id": 1,
+    "name": "Card 1",
+    "image": "images/card-deck/1.jpg",
+    "action": "State a problem with a current library technology. Describe in single sentences (or as simply as possible) the issues. Then respond with why? Repeat with the answers given 5 times. Where do these issues originate from?"
+  }, {
+    "id": 2,
+    "name": "Card 2",
+    "image": "images/card-deck/2.jpg",
+    "action": "In what ways might technology encourage the user to be more reflective of the information process? Or in their roles of creators and consumers of information? What technologies outside of libraries are already accomplishing this?"
+  }, {
+    "id": 3,
+    "name": "Card 3",
+    "image": "images/card-deck/3.jpg",
+    "action": "Reconceptualize direction of causality. Describe a library/librarian issue as the worst case scenario. Reverse engineer and draw a flow chart or map that illuminates where these processes breakdown."
+  }, {
+    "id": 4,
+    "name": "Card 4",
+    "image": "images/card-deck/4.jpg",
+    "action": "Make an exhaustive list of everything you might do as a librarian. Write minutia instructions for the last thing on the list. How would an alien attempt to complete these tasks?"
+  }, {
+    "id": 5,
+    "name": "Card 5",
+    "image": "images/card-deck/5.jpg",
+    "action": "List and rank your priorities within your role at your library. How might these projects progress, change form, grow, or alter if you were given an entire month to solely focus on one at a time? How would you utilize your time differently? How would the releasing of time constraints change your approach?"
+  }
+]
