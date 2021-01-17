@@ -20,6 +20,8 @@ import UnitedMicroKingdomsPrompt from "./Components/UnitedMicroKingdoms/Prompt";
 import UnitedMicroKingdomsAction from "./Components/UnitedMicroKingdoms/Action";
 import AuralArchitecturesPrompt from "./Components/AuralArchitectures/Prompt";
 import AuralArchitecturesAction from "./Components/AuralArchitectures/Action";
+import ArchitecturalPhotographyPrompt from "./Components/ArchitecturalPhotography/Prompt";
+import ArchitecturalPhotographyAction from "./Components/ArchitecturalPhotography/Action";
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
       <UnitedMicroKingdomsAction />
       <AuralArchitecturesPrompt />
       <AuralArchitecturesAction />
+      <ArchitecturalPhotographyPrompt />
+      <ArchitecturalPhotographyAction />
     </Provider>
   );
 }

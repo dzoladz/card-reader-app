@@ -13,6 +13,7 @@ const Header = () => {
   const { smellOfControlPrompt } = useContext(Context);
   const { unitedMicroKingdomsPrompt } = useContext(Context);
   const { auralArchitecturesPrompt } = useContext(Context);
+  const { architecturalPhotographyPrompt } = useContext(Context);
 
   return (
     <Jumbotron fluid className="jumbotron text-center p-3">
@@ -26,6 +27,7 @@ const Header = () => {
       <Button name="Smell of Control" onClick={smellOfControlPrompt} />
       <Button name="United Micro Kingdoms" onClick={unitedMicroKingdomsPrompt} />
       <Button name="Aural Architectures" onClick={auralArchitecturesPrompt} />
+      <Button name="Architectural Photography" onClick={architecturalPhotographyPrompt} />
     </Jumbotron>
   );
 };

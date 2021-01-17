@@ -8,6 +8,7 @@ import STcardsJSON from "./Components/JSON/deckST.json";
 import SCcardsJSON from "./Components/JSON/deckSC.json";
 import UMKcardsJSON from "./Components/JSON/deckUMK.json";
 import AAcardsJSON from "./Components/JSON/deckAA.json";
+import APcardsJSON from "./Components/JSON/deckAP.json";
 
 const Context = React.createContext({});
 
@@ -21,6 +22,7 @@ const Provider = ({ children }) => {
   const [SCcardDeck, setSCCardDeck] = useState([...SCcardsJSON]);
   const [UMKcardDeck, setUMKCardDeck] = useState([...UMKcardsJSON]);
   const [AAcardDeck, setAACardDeck] = useState([...AAcardsJSON]);
+  const [APcardDeck, setAPCardDeck] = useState([...APcardsJSON]);
   const [showIAP, setShowIAP] = useState(false);
   const [showIAA, setShowIAA] = useState(false);
   const [showIGP, setShowIGP] = useState(false);
@@ -39,6 +41,8 @@ const Provider = ({ children }) => {
   const [showUMKA, setShowUMKA] = useState(false);
   const [showAAP, setShowAAP] = useState(false);
   const [showAAA, setShowAAA] = useState(false);
+  const [showAPP, setShowAPP] = useState(false);
+  const [showAPA, setShowAPA] = useState(false);
 
 
   const shuffle = array => {
@@ -55,6 +59,8 @@ const Provider = ({ children }) => {
   };
 
   const imaginaryArchitecturesPrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowAAP(false);
     setShowAAA(false);
     setShowUMKP(false);
@@ -88,6 +94,8 @@ const Provider = ({ children }) => {
 
 
   const iAgreePrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowAAP(false);
     setShowAAA(false);
     setShowUMKP(false);
@@ -121,6 +129,8 @@ const Provider = ({ children }) => {
 
 
   const umbertoEcoPrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowAAP(false);
     setShowAAA(false);
     setShowUMKP(false);
@@ -152,6 +162,8 @@ const Provider = ({ children }) => {
   };
 
   const patentDependingPrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowAAP(false);
     setShowAAA(false);
     setShowUMKP(false);
@@ -184,6 +196,8 @@ const Provider = ({ children }) => {
 
 
   const cultureClashPrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowAAP(false);
     setShowAAA(false);
     setShowUMKP(false);
@@ -216,6 +230,8 @@ const Provider = ({ children }) => {
 
 
   const slowTechnologyPrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowAAP(false);
     setShowAAA(false);
     setShowUMKP(false);
@@ -248,6 +264,8 @@ const Provider = ({ children }) => {
 
 
   const smellOfControlPrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowAAP(false);
     setShowAAA(false);
     setShowUMKP(false);
@@ -281,6 +299,8 @@ const Provider = ({ children }) => {
 
 
   const unitedMicroKingdomsPrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowAAP(false);
     setShowAAA(false);
     setShowSCP(false);
@@ -314,6 +334,8 @@ const Provider = ({ children }) => {
 
 
   const auralArchitecturesPrompt = () => {
+    setShowAPP(false);
+    setShowAPA(false);
     setShowUMKP(false);
     setShowUMKA(false);
     setShowSCP(false);
@@ -344,6 +366,42 @@ const Provider = ({ children }) => {
           }, 0);
       }
   };
+
+
+  const architecturalPhotographyPrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
+    setShowUMKP(false);
+    setShowUMKA(false);
+    setShowSCP(false);
+    setShowSCA(false);
+    setShowIGP(false);
+    setShowIGA(false);
+    setShowUEP(false);
+    setShowUEA(false);
+    setShowPDP(false);
+    setShowPDA(false);
+    setShowCCP(false);
+    setShowCCA(false);
+    setShowSTP(false);
+    setShowSTA(false);
+    setShowIAP(false);
+    setShowIAA(false);
+    setShowAPP(true);
+  };
+
+  const architecturalPhotographyAction = () => {
+      setAPCardDeck(shuffle(APcardDeck));
+      if (showAPA === false) {
+          setShowAPA(true);
+      } else {
+          setShowAPA(false);
+          setTimeout(() => {
+              setShowAPA(true)
+          }, 0);
+      }
+  };
+
 
 
 
@@ -403,7 +461,13 @@ const Provider = ({ children }) => {
         auralArchitecturesPrompt,
         auralArchitecturesAction,
         AAcardDeck,
-        setAACardDeck
+        setAACardDeck,
+        showAPP,
+        showAPA,
+        architecturalPhotographyPrompt,
+        architecturalPhotographyAction,
+        APcardDeck,
+        setAPCardDeck
       }}
     >
       {children}
