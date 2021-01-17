@@ -7,6 +7,7 @@ import CCcardsJSON from "./Components/JSON/deckCC.json";
 import STcardsJSON from "./Components/JSON/deckST.json";
 import SCcardsJSON from "./Components/JSON/deckSC.json";
 import UMKcardsJSON from "./Components/JSON/deckUMK.json";
+import AAcardsJSON from "./Components/JSON/deckAA.json";
 
 const Context = React.createContext({});
 
@@ -19,6 +20,7 @@ const Provider = ({ children }) => {
   const [STcardDeck, setSTCardDeck] = useState([...STcardsJSON]);
   const [SCcardDeck, setSCCardDeck] = useState([...SCcardsJSON]);
   const [UMKcardDeck, setUMKCardDeck] = useState([...UMKcardsJSON]);
+  const [AAcardDeck, setAACardDeck] = useState([...AAcardsJSON]);
   const [showIAP, setShowIAP] = useState(false);
   const [showIAA, setShowIAA] = useState(false);
   const [showIGP, setShowIGP] = useState(false);
@@ -35,6 +37,8 @@ const Provider = ({ children }) => {
   const [showSCA, setShowSCA] = useState(false);
   const [showUMKP, setShowUMKP] = useState(false);
   const [showUMKA, setShowUMKA] = useState(false);
+  const [showAAP, setShowAAP] = useState(false);
+  const [showAAA, setShowAAA] = useState(false);
 
 
   const shuffle = array => {
@@ -51,6 +55,8 @@ const Provider = ({ children }) => {
   };
 
   const imaginaryArchitecturesPrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
     setShowUMKP(false);
     setShowUMKA(false);
     setShowSCP(false);
@@ -82,6 +88,8 @@ const Provider = ({ children }) => {
 
 
   const iAgreePrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
     setShowUMKP(false);
     setShowUMKA(false);
     setShowSCP(false);
@@ -113,6 +121,8 @@ const Provider = ({ children }) => {
 
 
   const umbertoEcoPrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
     setShowUMKP(false);
     setShowUMKA(false);
     setShowSCP(false);
@@ -142,6 +152,8 @@ const Provider = ({ children }) => {
   };
 
   const patentDependingPrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
     setShowUMKP(false);
     setShowUMKA(false);
     setShowSCP(false);
@@ -172,6 +184,8 @@ const Provider = ({ children }) => {
 
 
   const cultureClashPrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
     setShowUMKP(false);
     setShowUMKA(false);
     setShowSCP(false);
@@ -202,6 +216,8 @@ const Provider = ({ children }) => {
 
 
   const slowTechnologyPrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
     setShowUMKP(false);
     setShowUMKA(false);
     setShowSCP(false);
@@ -232,6 +248,8 @@ const Provider = ({ children }) => {
 
 
   const smellOfControlPrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
     setShowUMKP(false);
     setShowUMKA(false);
     setShowIGP(false);
@@ -263,6 +281,8 @@ const Provider = ({ children }) => {
 
 
   const unitedMicroKingdomsPrompt = () => {
+    setShowAAP(false);
+    setShowAAA(false);
     setShowSCP(false);
     setShowSCA(false);
     setShowIGP(false);
@@ -291,6 +311,41 @@ const Provider = ({ children }) => {
           }, 0);
       }
   };
+
+
+  const auralArchitecturesPrompt = () => {
+    setShowUMKP(false);
+    setShowUMKA(false);
+    setShowSCP(false);
+    setShowSCA(false);
+    setShowIGP(false);
+    setShowIGA(false);
+    setShowUEP(false);
+    setShowUEA(false);
+    setShowPDP(false);
+    setShowPDA(false);
+    setShowCCP(false);
+    setShowCCA(false);
+    setShowSTP(false);
+    setShowSTA(false);
+    setShowIAP(false);
+    setShowIAA(false);
+    setShowAAP(true);
+  };
+
+  const auralArchitecturesAction = () => {
+      setAACardDeck(shuffle(AAcardDeck));
+      if (showAAA === false) {
+          setShowAAA(true);
+      } else {
+          setShowAAA(false);
+          setTimeout(() => {
+              setShowAAA(true)
+          }, 0);
+      }
+  };
+
+
 
   return (
     <Context.Provider
@@ -342,7 +397,13 @@ const Provider = ({ children }) => {
         unitedMicroKingdomsPrompt,
         unitedMicroKingdomsAction,
         UMKcardDeck,
-        setUMKCardDeck
+        setUMKCardDeck,
+        showAAP,
+        showAAA,
+        auralArchitecturesPrompt,
+        auralArchitecturesAction,
+        AAcardDeck,
+        setAACardDeck
       }}
     >
       {children}

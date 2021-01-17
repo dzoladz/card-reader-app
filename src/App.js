@@ -18,6 +18,8 @@ import SmellOfControlPrompt from "./Components/SmellOfControl/Prompt";
 import SmellOfControlAction from "./Components/SmellOfControl/Action";
 import UnitedMicroKingdomsPrompt from "./Components/UnitedMicroKingdoms/Prompt";
 import UnitedMicroKingdomsAction from "./Components/UnitedMicroKingdoms/Action";
+import AuralArchitecturesPrompt from "./Components/AuralArchitectures/Prompt";
+import AuralArchitecturesAction from "./Components/AuralArchitectures/Action";
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
       <SmellOfControlAction />
       <UnitedMicroKingdomsPrompt />
       <UnitedMicroKingdomsAction />
+      <AuralArchitecturesPrompt />
+      <AuralArchitecturesAction />
     </Provider>
   );
 }
