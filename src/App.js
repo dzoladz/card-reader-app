@@ -14,6 +14,8 @@ import CultureClashPrompt from "./Components/CultureClash/Prompt";
 import CultureClashAction from "./Components/CultureClash/Action";
 import SlowTechnologyPrompt from "./Components/SlowTechnology/Prompt";
 import SlowTechnologyAction from "./Components/SlowTechnology/Action";
+import SmellOfControlPrompt from "./Components/SmellOfControl/Prompt";
+import SmellOfControlAction from "./Components/SmellOfControl/Action";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
       <CultureClashAction />
       <SlowTechnologyPrompt />
       <SlowTechnologyAction />
+      <SmellOfControlPrompt />
+      <SmellOfControlAction />
     </Provider>
   );
 }

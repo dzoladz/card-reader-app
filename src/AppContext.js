@@ -5,6 +5,7 @@ import UEcardsJSON from "./Components/JSON/deckUE.json";
 import PDcardsJSON from "./Components/JSON/deckPD.json";
 import CCcardsJSON from "./Components/JSON/deckCC.json";
 import STcardsJSON from "./Components/JSON/deckST.json";
+import SCcardsJSON from "./Components/JSON/deckSC.json";
 
 const Context = React.createContext({});
 
@@ -15,6 +16,7 @@ const Provider = ({ children }) => {
   const [PDcardDeck, setPDCardDeck] = useState([...PDcardsJSON]);
   const [CCcardDeck, setCCCardDeck] = useState([...CCcardsJSON]);
   const [STcardDeck, setSTCardDeck] = useState([...STcardsJSON]);
+  const [SCcardDeck, setSCCardDeck] = useState([...SCcardsJSON]);
   const [showIAP, setShowIAP] = useState(false);
   const [showIAA, setShowIAA] = useState(false);
   const [showIGP, setShowIGP] = useState(false);
@@ -27,6 +29,8 @@ const Provider = ({ children }) => {
   const [showCCA, setShowCCA] = useState(false);
   const [showSTP, setShowSTP] = useState(false);
   const [showSTA, setShowSTA] = useState(false);
+  const [showSCP, setShowSCP] = useState(false);
+  const [showSCA, setShowSCA] = useState(false);
 
 
   const shuffle = array => {
@@ -43,6 +47,8 @@ const Provider = ({ children }) => {
   };
 
   const imaginaryArchitecturesPrompt = () => {
+    setShowSCP(false);
+    setShowSCA(false);
     setShowIGP(false);
     setShowIGA(false);
     setShowUEP(false);
@@ -70,6 +76,8 @@ const Provider = ({ children }) => {
 
 
   const iAgreePrompt = () => {
+    setShowSCP(false);
+    setShowSCA(false);
     setShowIAP(false);
     setShowIAA(false);
     setShowUEP(false);
@@ -97,6 +105,8 @@ const Provider = ({ children }) => {
 
 
   const umbertoEcoPrompt = () => {
+    setShowSCP(false);
+    setShowSCA(false);
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
@@ -122,6 +132,8 @@ const Provider = ({ children }) => {
   };
 
   const patentDependingPrompt = () => {
+    setShowSCP(false);
+    setShowSCA(false);
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
@@ -148,6 +160,8 @@ const Provider = ({ children }) => {
 
 
   const cultureClashPrompt = () => {
+    setShowSCP(false);
+    setShowSCA(false);
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
@@ -174,6 +188,8 @@ const Provider = ({ children }) => {
 
 
     const slowTechnologyPrompt = () => {
+    setShowSCP(false);
+    setShowSCA(false);
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
@@ -194,6 +210,35 @@ const Provider = ({ children }) => {
           setShowSTA(false);
           setTimeout(() => {
               setShowSTA(true)
+          }, 0);
+      }
+  };
+
+
+  const smellOfControlPrompt = () => {
+    setShowIGP(false);
+    setShowIGA(false);
+    setShowUEP(false);
+    setShowUEA(false);
+    setShowPDP(false);
+    setShowPDA(false);
+    setShowCCP(false);
+    setShowCCA(false);
+    setShowSTP(false);
+    setShowSTA(false);
+    setShowIAP(false);
+    setShowIAA(false);
+    setShowSCP(true);
+  };
+
+  const smellOfControlAction = () => {
+      setSCCardDeck(shuffle(SCcardDeck));
+      if (showSCA === false) {
+          setShowSCA(true);
+      } else {
+          setShowSCA(false);
+          setTimeout(() => {
+              setShowSCA(true)
           }, 0);
       }
   };
@@ -238,7 +283,13 @@ const Provider = ({ children }) => {
         slowTechnologyPrompt,
         slowTechnologyAction,
         STcardDeck,
-        setSTCardDeck
+        setSTCardDeck,
+        showSCP,
+        showSCA,
+        smellOfControlPrompt,
+        smellOfControlAction,
+        SCcardDeck,
+        setSCCardDeck
       }}
     >
       {children}

@@ -10,6 +10,7 @@ const Header = () => {
   const { patentDependingPrompt } = useContext(Context);
   const { cultureClashPrompt } = useContext(Context);
   const { slowTechnologyPrompt } = useContext(Context);
+  const { smellOfControlPrompt } = useContext(Context);
 
   return (
     <Jumbotron fluid className="jumbotron text-center p-3">
@@ -20,6 +21,7 @@ const Header = () => {
       <Button name="Patent Depending" onClick={patentDependingPrompt} />
       <Button name="Sampler - Culture Clash" onClick={cultureClashPrompt} />
       <Button name="Slow Technology" onClick={slowTechnologyPrompt} />
+      <Button name="Smell of Control" onClick={smellOfControlPrompt} />
     </Jumbotron>
   );
 };
