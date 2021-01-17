@@ -1,0 +1,33 @@
+[
+  {
+    "id": 0,
+    "name": "Card 0",
+    "image": "images/card-deck/0.jpg",
+    "action": "Speculate about how libraries might serve one of these user groups by producing short narratives, sketches, and/or debates."
+  }, {
+    "id": 1,
+    "name": "Card 1",
+    "image": "images/card-deck/1.jpg",
+    "action": "Together or individually: Draw a map of a library that would serve one of the communities described in this map. What is included? How are materials organized?"
+  }, {
+    "id": 2,
+    "name": "Card 2",
+    "image": "images/card-deck/2.jpg",
+    "action": "Individually, choose a country and develop an outline of needed resources and services, then compare each within the larger group. What is similar/different? How does a library adjust to the community and how can a library serve multiple communities well?"
+  }, {
+    "id": 3,
+    "name": "Card 3",
+    "image": "images/card-deck/3.jpg",
+    "action": "What mechanisms are in place for listening to your users? What methods can we create that lean into the central ideas of their kingdoms to gather the best results?"
+  }, {
+    "id": 4,
+    "name": "Card 4",
+    "image": "images/card-deck/4.jpg",
+    "action": "How might cultural habits change how your library is used? How might your library change cultural habits? What social norms, etiquette or traditions could change because of your library?"
+  }, {
+    "id": 5,
+    "name": "Card 5",
+    "image": "images/card-deck/5.jpg",
+    "action": "Map out the differences and similarities that these community libraries would have. What can be learned from what they all share?"
+  }
+]

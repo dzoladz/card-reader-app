@@ -6,6 +6,7 @@ import PDcardsJSON from "./Components/JSON/deckPD.json";
 import CCcardsJSON from "./Components/JSON/deckCC.json";
 import STcardsJSON from "./Components/JSON/deckST.json";
 import SCcardsJSON from "./Components/JSON/deckSC.json";
+import UMKcardsJSON from "./Components/JSON/deckUMK.json";
 
 const Context = React.createContext({});
 
@@ -17,6 +18,7 @@ const Provider = ({ children }) => {
   const [CCcardDeck, setCCCardDeck] = useState([...CCcardsJSON]);
   const [STcardDeck, setSTCardDeck] = useState([...STcardsJSON]);
   const [SCcardDeck, setSCCardDeck] = useState([...SCcardsJSON]);
+  const [UMKcardDeck, setUMKCardDeck] = useState([...UMKcardsJSON]);
   const [showIAP, setShowIAP] = useState(false);
   const [showIAA, setShowIAA] = useState(false);
   const [showIGP, setShowIGP] = useState(false);
@@ -31,6 +33,8 @@ const Provider = ({ children }) => {
   const [showSTA, setShowSTA] = useState(false);
   const [showSCP, setShowSCP] = useState(false);
   const [showSCA, setShowSCA] = useState(false);
+  const [showUMKP, setShowUMKP] = useState(false);
+  const [showUMKA, setShowUMKA] = useState(false);
 
 
   const shuffle = array => {
@@ -47,6 +51,8 @@ const Provider = ({ children }) => {
   };
 
   const imaginaryArchitecturesPrompt = () => {
+    setShowUMKP(false);
+    setShowUMKA(false);
     setShowSCP(false);
     setShowSCA(false);
     setShowIGP(false);
@@ -76,6 +82,8 @@ const Provider = ({ children }) => {
 
 
   const iAgreePrompt = () => {
+    setShowUMKP(false);
+    setShowUMKA(false);
     setShowSCP(false);
     setShowSCA(false);
     setShowIAP(false);
@@ -105,6 +113,8 @@ const Provider = ({ children }) => {
 
 
   const umbertoEcoPrompt = () => {
+    setShowUMKP(false);
+    setShowUMKA(false);
     setShowSCP(false);
     setShowSCA(false);
     setShowIAP(false);
@@ -132,6 +142,8 @@ const Provider = ({ children }) => {
   };
 
   const patentDependingPrompt = () => {
+    setShowUMKP(false);
+    setShowUMKA(false);
     setShowSCP(false);
     setShowSCA(false);
     setShowIAP(false);
@@ -160,6 +172,8 @@ const Provider = ({ children }) => {
 
 
   const cultureClashPrompt = () => {
+    setShowUMKP(false);
+    setShowUMKA(false);
     setShowSCP(false);
     setShowSCA(false);
     setShowIAP(false);
@@ -187,7 +201,9 @@ const Provider = ({ children }) => {
   };
 
 
-    const slowTechnologyPrompt = () => {
+  const slowTechnologyPrompt = () => {
+    setShowUMKP(false);
+    setShowUMKA(false);
     setShowSCP(false);
     setShowSCA(false);
     setShowIAP(false);
@@ -216,6 +232,8 @@ const Provider = ({ children }) => {
 
 
   const smellOfControlPrompt = () => {
+    setShowUMKP(false);
+    setShowUMKA(false);
     setShowIGP(false);
     setShowIGA(false);
     setShowUEP(false);
@@ -244,6 +262,35 @@ const Provider = ({ children }) => {
   };
 
 
+  const unitedMicroKingdomsPrompt = () => {
+    setShowSCP(false);
+    setShowSCA(false);
+    setShowIGP(false);
+    setShowIGA(false);
+    setShowUEP(false);
+    setShowUEA(false);
+    setShowPDP(false);
+    setShowPDA(false);
+    setShowCCP(false);
+    setShowCCA(false);
+    setShowSTP(false);
+    setShowSTA(false);
+    setShowIAP(false);
+    setShowIAA(false);
+    setShowUMKP(true);
+  };
+
+  const unitedMicroKingdomsAction = () => {
+      setUMKCardDeck(shuffle(UMKcardDeck));
+      if (showUMKA === false) {
+          setShowUMKA(true);
+      } else {
+          setShowUMKA(false);
+          setTimeout(() => {
+              setShowUMKA(true)
+          }, 0);
+      }
+  };
 
   return (
     <Context.Provider
@@ -289,7 +336,13 @@ const Provider = ({ children }) => {
         smellOfControlPrompt,
         smellOfControlAction,
         SCcardDeck,
-        setSCCardDeck
+        setSCCardDeck,
+        showUMKP,
+        showUMKA,
+        unitedMicroKingdomsPrompt,
+        unitedMicroKingdomsAction,
+        UMKcardDeck,
+        setUMKCardDeck
       }}
     >
       {children}

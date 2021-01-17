@@ -16,6 +16,8 @@ import SlowTechnologyPrompt from "./Components/SlowTechnology/Prompt";
 import SlowTechnologyAction from "./Components/SlowTechnology/Action";
 import SmellOfControlPrompt from "./Components/SmellOfControl/Prompt";
 import SmellOfControlAction from "./Components/SmellOfControl/Action";
+import UnitedMicroKingdomsPrompt from "./Components/UnitedMicroKingdoms/Prompt";
+import UnitedMicroKingdomsAction from "./Components/UnitedMicroKingdoms/Action";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
       <SlowTechnologyAction />
       <SmellOfControlPrompt />
       <SmellOfControlAction />
+      <UnitedMicroKingdomsPrompt />
+      <UnitedMicroKingdomsAction />
     </Provider>
   );
 }
