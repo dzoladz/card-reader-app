@@ -2,32 +2,32 @@
   {
     "id": 0,
     "name": "Card 0",
-    "image": "images/card-deck/0.jpg",
+    "image": "images/_Aural-Architecture_/2.png",
     "action": "What does library architecture sound like? How could we rearrange the space to change the sound? Draw the sound or write a poem that describes the sound."
   }, {
     "id": 1,
     "name": "Card 1",
-    "image": "images/card-deck/1.jpg",
+    "image": "images/_Aural-Architecture_/3.png",
     "action": "Choose one type of aural architecture spatiality and write a description for that type as experienced in a library."
   }, {
     "id": 2,
     "name": "Card 2",
-    "image": "images/card-deck/2.jpg",
+    "image": "images/_Aural-Architecture_/4.png",
     "action": "Intensify the experience of the place. Listen to the materials. What mechanisms are in place for listening to your users? How might cultural [auditory] habits change how your library is used?"
   }, {
     "id": 3,
     "name": "Card 3",
-    "image": "images/card-deck/3.jpg",
+    "image": "images/_Aural-Architecture_/5.png",
     "action": "Libraries have a reputation for being a “quiet” place. Create a map of an unquiet library. What kinds of information are elevated in the space?"
   }, {
     "id": 4,
     "name": "Card 4",
-    "image": "images/card-deck/4.jpg",
+    "image": "images/_Aural-Architecture_/6.png",
     "action": "Test the silence boundaries of the library. After breaking the boundaries, refuse to return to silence."
   }, {
     "id": 5,
     "name": "Card 5",
-    "image": "images/card-deck/5.jpg",
+    "image": "images/_Aural-Architecture_/7.png",
     "action": "Draw the rhythm of the title of each of the first ten books you encounter. Listen to the cadence; the syllables, the way the words sound. Draw these sounds on an individual piece of paper for each book’s title."
   }
 ]
