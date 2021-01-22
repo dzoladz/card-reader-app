@@ -2,32 +2,32 @@
   {
     "id": 0,
     "name": "Card 0",
-    "image": "images/card-deck/2.png",
+    "image": "images/_Imaginary-Architectures_/2.png",
     "action": "What would a library look like in this series? How would we represent the spaces and flow of a library? What essential details make a library recognizable and distinct from other building types? The design duo started this project with sketches. Explore line and volume on paper while walking through space and reducing it to the essentials."
   }, {
     "id": 1,
     "name": "Card 1",
-    "image": "images/card-deck/3.png",
+    "image": "images/_Imaginary-Architectures_/3.png",
     "action": "Create a map of how to navigate your home library using only navigational lines and no landmarks. Narrate this navigational line for a colleague. Share your findings."
   }, {
     "id": 2,
     "name": "Card 2",
-    "image": "images/card-deck/4.png",
+    "image": "images/_Imaginary-Architectures_/4.png",
     "action": "Brainstorm 20+ words that describe your role within librarianship. In a key, assign each word an Architectural aspect (door, window, desk, floor). Draw an Architectural Space using only those words to guide you. What elements are missing? What words might you associate with them?"
   }, {
     "id": 3,
     "name": "Card 3",
-    "image": "images/card-deck/5.png",
+    "image": "images/_Imaginary-Architectures_/5.png",
     "action": "Think about a library beyond physical boundaries. Outside of the physical space, what gives the library shape, form, function? How do walls + infrastructure support these aspects? Describe, draw, collage, or map a library without architectural constraints."
   }, {
     "id": 4,
     "name": "Card 4",
-    "image": "images/card-deck/6.png",
+    "image": "images/_Imaginary-Architectures_/6.png",
     "action": "In a group, individually draw your library using only symbols. Swap with your neighbor and attempt to describe/label the library with words. What seemed natural? What was missed? What was specific and what was ambiguous?"
   }, {
     "id": 5,
     "name": "Card 5",
-    "image": "images/card-deck/7.png",
+    "image": "images/_Imaginary-Architectures_/7.png",
     "action": "Choose books and other objects in the library based on one color. Use only those objects to build or draw a new space design."
   }
 ]
