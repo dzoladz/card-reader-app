@@ -1,6 +1,8 @@
 import React from "react";
 import { Provider } from "./AppContext";
 import "./App.css";
+import { Row, Col } from "react-bootstrap";
+import Categories from "./Components/Categories/Categories";
 import Header from "./Components/Header/Header";
 import ImaginaryArchitecturesPrompt from "./Components/ImaginaryArchitectures/Prompt";
 import ImaginaryArchitecturesAction from "./Components/ImaginaryArchitectures/Action";
@@ -27,26 +29,35 @@ function App() {
   return (
     <Provider>
       <Header />
-      <ImaginaryArchitecturesPrompt />
-      <ImaginaryArchitecturesAction />
-      <IAgreePrompt />
-      <IAgreeAction />
-      <UmbertoEcoPrompt />
-      <UmbertoEcoAction />
-      <PatentDependingPrompt />
-      <PatentDependingAction />
-      <CultureClashPrompt />
-      <CultureClashAction />
-      <SlowTechnologyPrompt />
-      <SlowTechnologyAction />
-      <SmellOfControlPrompt />
-      <SmellOfControlAction />
-      <UnitedMicroKingdomsPrompt />
-      <UnitedMicroKingdomsAction />
-      <AuralArchitecturesPrompt />
-      <AuralArchitecturesAction />
-      <ArchitecturalPhotographyPrompt />
-      <ArchitecturalPhotographyAction />
+      <Row>
+        <Col sm={3} >
+            <Categories />
+        </Col>
+        <Col>
+          <div class="main-content">
+            <ImaginaryArchitecturesPrompt />
+            <ImaginaryArchitecturesAction />
+            <IAgreePrompt />
+            <IAgreeAction />
+            <UmbertoEcoPrompt />
+            <UmbertoEcoAction />
+            <PatentDependingPrompt />
+            <PatentDependingAction />
+            <CultureClashPrompt />
+            <CultureClashAction />
+            <SlowTechnologyPrompt />
+            <SlowTechnologyAction />
+            <SmellOfControlPrompt />
+            <SmellOfControlAction />
+            <UnitedMicroKingdomsPrompt />
+            <UnitedMicroKingdomsAction />
+            <AuralArchitecturesPrompt />
+            <AuralArchitecturesAction />
+            <ArchitecturalPhotographyPrompt />
+            <ArchitecturalPhotographyAction />
+          </div>
+        </Col>
+      </Row>
     </Provider>
   );
 }
