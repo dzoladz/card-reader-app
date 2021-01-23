@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c26568881c0dde6e0d28ac51dfb7f40",
+    "revision": "5ab4c3a58433a92673fb80fd1feab43e",
     "url": "/card-reader-app/index.html"
   },
   {
-    "revision": "f24b6d3c79bc04704288",
+    "revision": "99776bb2d427c05664bd",
     "url": "/card-reader-app/static/css/main.b5cbb14c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/card-reader-app/static/js/2.91087e17.chunk.js.LICENSE"
   },
   {
-    "revision": "f24b6d3c79bc04704288",
-    "url": "/card-reader-app/static/js/main.1b683446.chunk.js"
+    "revision": "99776bb2d427c05664bd",
+    "url": "/card-reader-app/static/js/main.704dd72b.chunk.js"
   },
   {
     "revision": "464dbe42d6d4bc2bb45c",
