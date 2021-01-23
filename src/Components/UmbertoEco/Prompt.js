@@ -13,7 +13,7 @@ const UmbertoEcoPrompt = () => {
   return (
     <Container>
       <Row className="justify-content-center text animated fadeIn slower">
-      <Col md={11}>
+      <Col md={12}>
           <p>
               Read Umberto Eco’s four-page numbered list “How to Organize a Public Library” from <a href="http://www.worldcat.org/oclc/1204229813" rel="noopener noreferrer" target="_blank">How to Travel with a Salmon</a> (1994) or the version in Candida Höfer’s <a href="http://www.worldcat.org/oclc/1078884037" rel="noopener noreferrer" target="_blank">Libraries</a>. Eco uses speculative fiction to demonstrate the ideal library by creating a bad library, where disorder and chaos reign in cataloging, subject headings, borrowing periods, and lack of amenities.
           </p>

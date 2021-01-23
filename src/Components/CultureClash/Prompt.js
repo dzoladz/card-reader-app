@@ -13,7 +13,7 @@ const CultureClashPrompt = () => {
   return (
     <Container>
       <Row className="justify-content-center text animated fadeIn slower">
-      <Col md={11}>
+      <Col md={12}>
           <p>
               In <a href="https://drive.google.com/open?id=1OR9Ls9Gteoxu04F_PDtQtb4HOr5YQIc9" rel="noopener noreferrer" target="_blank">Sampler - Culture Clash</a> (2012), <a href="http://davidlittler.tumblr.com/" rel="noopener noreferrer" target="_blank">David Littler</a> aligns two practices, embroidery and disc jockeying, by exploring language and culture. Both use the term sampler as well as needle, loop (threads, beats), cross (stitch, fader), and more. This critical design project asks us to make connections where there seem to be none. Little considers how each practice might inform the other, shifting approaches and expectations in textiles and music.
           </p>

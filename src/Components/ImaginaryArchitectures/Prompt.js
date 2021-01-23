@@ -13,7 +13,7 @@ const ImaginaryArchitecturesPrompt = () => {
   return (
     <Container>
       <Row className="justify-content-center text animated fadeIn slower">
-      <Col md={13}>
+      <Col md={12}>
           <p>
             <a href="https://www.dezeen.com/2010/03/10/imaginary-architectures-by-el-ultimo-grito/" rel="noopener noreferrer" target="_blank">Imaginary Architectures</a> (2010) from the design group <a href="https://elultimogrito.website/work" rel="noopener noreferrer" target="_blank">El Ultimo Grito</a> are blown glass representations of different types of buildings. Reduced to mere lines and shapes, emphasizing movement through space, these objects use the minimum elements necessary to define the building’s primary purpose. In one work, a hotel is comprised of a lower open space (a lobby) with small, repetitive nodes of spaces above (rooms). The group’s process aligns with "a long tradition of what in Italy is called Architectura da Carta, visionary explorations of the unbuilt and unbuildable" (Katz in Nonobject 2011, xxv). Of the project, El Ultimo Grito state:
           </p>

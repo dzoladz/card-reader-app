@@ -13,7 +13,7 @@ const SlowTechnologyPrompt = () => {
   return (
     <Container>
       <Row className="justify-content-center text animated fadeIn slower">
-      <Col md={11}>
+      <Col md={12}>
           <p>
               <a href="http://redstrom.se/johan/slowtechnology/project/" rel="noopener noreferrer" target="_blank">Slow technology</a> is “design for technology aimed at reflection and moments of mental rest rather than efficiency in performance” (Hallnäs and Redström 2001). They ask “what are the characteristics of information and computing technology that initiate changes towards a more reflective environment?” (ibid., 202). This is a way to give people time to understand how and why something works. Often we employ technology in ways to speed up processes and access for our users (user-friendliness). But, in doing so, we mask the complexity and intentionality of the process and how the technology works.
           </p>

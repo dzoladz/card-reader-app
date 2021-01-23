@@ -13,7 +13,7 @@ const SmellOfControlPrompt = () => {
   return (
     <Container>
       <Row className="justify-content-center text animated fadeIn slower">
-      <Col md={11}>
+      <Col md={12}>
           <p>
               Gary and Marie Radford have explored the connection between libraries and fear and the use of control through the library as panopticon. Their literature review suggests a strong majority of students describe a first impression of the library that demonstrates fear or anxiety, and that these emotions may be prompted from library spaces “dominated by surveillance and order” (Radford, Radford, and Lingel 2018, 685). This stems from services and spaces including classification systems, library fines, and magnetized books to having to ask library staff for assistance and using information systems that track your searches. This “discourse of fear” is cultural and “is what makes possible the knowledge that you are in a library and speaking to a librarian at all” (Radford and Radford 2001, 323).
           </p>

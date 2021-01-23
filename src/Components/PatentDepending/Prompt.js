@@ -13,7 +13,7 @@ const PatentDependingPrompt = () => {
   return (
     <Container>
       <Row className="justify-content-center text animated fadeIn slower">
-      <Col md={11}>
+      <Col md={12}>
           <p>
               “Twentieth century office design provides a good opportunity to study the role of life in architecture” (Bell 2003, 78-79). Steven Johnson does this in his cartoon series, <a href="https://codex.core77.com/users/Steven_Johnson" rel="noopener noreferrer" target="_blank">Patent Depending</a>, using humor to create fictional products for current work and lifestyle trends. His inventions that focus on offices and work patterns are particularly relevant to libraries. <a href="https://www.core77.com/posts/75532/Steven-M-Johnsons-Bizarre-Invention-54-The-Upsy-Downsy-Workstation" rel="noopener noreferrer" target="_blank">Patent Depending #54</a> (2017) is a design for cubicle office furniture that serve as desks. When there are company layoffs, the desks can be flipped over to become lobby seating. As is, this cartoon acts as a commentary on the library's constant rearrangement of ever-smaller spaces to accommodate more users as staff hiring practices show a decline.
           </p>
