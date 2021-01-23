@@ -2,32 +2,32 @@
   {
     "id": 0,
     "name": "Card 0",
-    "image": "images/SmellControl/2.jpg",
+    "image": "images/SmellControl/2.png",
     "action": "Design a robot that responds to information anxiety. What does this anxiety smell like? What would a device need to do to our senses in order to reduce the anxiety?"
   }, {
     "id": 1,
     "name": "Card 1",
-    "image": "images/SmellControl/3.jpg",
+    "image": "images/SmellControl/3.png",
     "action": "Discuss the University of Utah cry closet. What other programs or initiatives address specific emotions in this way? Create a list of known emotions associated with the library and library services. Select three negative emotions listed and create a program or event to address these specifically."
   }, {
     "id": 2,
     "name": "Card 2",
-    "image": "images/SmellControl/4.jpg",
+    "image": "images/SmellControl/4.png",
     "action": "Imagine a child moving through the library space. What could make people feel unsafe or exposed? What mechanisms are in place for listening to your users? How will you recognize larger patterns in feedback so that action can be taken?"
   }, {
     "id": 3,
     "name": "Card 3",
-    "image": "images/SmellControl/5.jpg",
+    "image": "images/SmellControl/5.png",
     "action": "Create a map of a library only using words that can be associated with the act of smelling. Now re-create the map using emotions."
   }, {
     "id": 4,
     "name": "Card 4",
-    "image": "images/SmellControl/6.jpg",
+    "image": "images/SmellControl/6.png",
     "action": "Design a library for patrons with bibliophobia (fear of books). What information can be found in other forms? What information will they not be able to access? How is certain information bound to its material form?"
   }, {
     "id": 5,
     "name": "Card 5",
-    "image": "images/SmellControl/7.jpg",
+    "image": "images/SmellControl/7.png",
     "action": "Create a job posting for a librarian whose role is to reduce student library anxiety. What qualities must they possess? What previous work experiences will they have had? What daily duties would be assigned to them? Are these skill sets only found within librarianship? What other professions can we learn from?"
   }
 ]
