@@ -2,32 +2,32 @@
   {
     "id": 0,
     "name": "Card 0",
-    "image": "images/_I-Agree_/2.png",
+    "image": "images/IAgree/2.png",
     "action": "Select a popular library vendor and examine their terms of service and/or privacy policy. Use the language of one of the policies to write a poem (may be concrete poetry if you’d like to incorporate visuals) about information access. (Polisis: ProQuest, EBSCOhost, JSTOR)"
   }, {
     "id": 1,
     "name": "Card 1",
-    "image": "images/_I-Agree_/3.png",
+    "image": "images/IAgree/3.png",
     "action": "Emphasize the Flaws within popular library vendor terms of services. Review the documents and find the words that are problematic. Create a word cloud or a concrete poem with these words or concepts."
   }, {
     "id": 2,
     "name": "Card 2",
-    "image": "images/_I-Agree_/4.png",
+    "image": "images/IAgree/4.png",
     "action": "How can we tell stories with data? Attempt to describe or visualize all the ways in which data informs/controls/influences our daily lives in libraries."
   }, {
     "id": 3,
     "name": "Card 3",
-    "image": "images/_I-Agree_/5.png",
+    "image": "images/IAgree/5.png",
     "action": "Use one of the terms of service, creatively destroy, leaving a redacted version (or erasure poem). Mail this to the vendor."
   }, {
     "id": 4,
     "name": "Card 4",
-    "image": "images/_I-Agree_/6.png",
+    "image": "images/IAgree/6.png",
     "action": "Look at the terms of service, re-imagine them as if their qualities were human (think of descriptive words such as restrictive, secretive, controlling, etc.). Create an online dating profile as if the agreement was a person.  What does this person look like? How might you communicate effectively with this person? What kinds of books might they read? How does transforming this document into human form change how you might approach it?"
   }, {
     "id": 5,
     "name": "Card 5",
-    "image": "images/_I-Agree_/7.png",
+    "image": "images/IAgree/7.png",
     "action": "Rewrite or draw the terms of service so a child could understand them."
   }
 ]
