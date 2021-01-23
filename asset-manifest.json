@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/card-reader-app/static/css/main.b5cbb14c.chunk.css",
-    "main.js": "/card-reader-app/static/js/main.3b113518.chunk.js",
-    "main.js.map": "/card-reader-app/static/js/main.3b113518.chunk.js.map",
+    "main.js": "/card-reader-app/static/js/main.97049fb1.chunk.js",
+    "main.js.map": "/card-reader-app/static/js/main.97049fb1.chunk.js.map",
     "runtime-main.js": "/card-reader-app/static/js/runtime-main.18dd0bc0.js",
     "runtime-main.js.map": "/card-reader-app/static/js/runtime-main.18dd0bc0.js.map",
     "static/js/2.91087e17.chunk.js": "/card-reader-app/static/js/2.91087e17.chunk.js",
     "static/js/2.91087e17.chunk.js.map": "/card-reader-app/static/js/2.91087e17.chunk.js.map",
     "index.html": "/card-reader-app/index.html",
-    "precache-manifest.324a6a2f2afa80ccf9fb7c0f93588507.js": "/card-reader-app/precache-manifest.324a6a2f2afa80ccf9fb7c0f93588507.js",
+    "precache-manifest.247c25a1faa7f3b9a120ab979ee0f331.js": "/card-reader-app/precache-manifest.247c25a1faa7f3b9a120ab979ee0f331.js",
     "service-worker.js": "/card-reader-app/service-worker.js",
     "static/css/main.b5cbb14c.chunk.css.map": "/card-reader-app/static/css/main.b5cbb14c.chunk.css.map",
     "static/js/2.91087e17.chunk.js.LICENSE": "/card-reader-app/static/js/2.91087e17.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.18dd0bc0.js",
     "static/js/2.91087e17.chunk.js",
     "static/css/main.b5cbb14c.chunk.css",
-    "static/js/main.3b113518.chunk.js"
+    "static/js/main.97049fb1.chunk.js"
   ]
 }
