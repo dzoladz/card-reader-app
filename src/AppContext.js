@@ -140,6 +140,7 @@ const Provider = ({ children }) => {
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
+    setShowIGA(false);
     setShowPDP(false);
     setShowPDA(false);
     setShowCCP(false);
@@ -173,6 +174,7 @@ const Provider = ({ children }) => {
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
+    setShowIGA(false);
     setShowUEP(false);
     setShowUEA(false);
     setShowCCP(false);
@@ -207,6 +209,7 @@ const Provider = ({ children }) => {
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
+    setShowIGA(false);
     setShowUEP(false);
     setShowUEA(false);
     setShowPDP(false);
@@ -241,6 +244,7 @@ const Provider = ({ children }) => {
     setShowIAP(false);
     setShowIAA(false);
     setShowIGP(false);
+    setShowIGA(false);
     setShowUEP(false);
     setShowUEA(false);
     setShowPDP(false);
