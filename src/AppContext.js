@@ -43,6 +43,8 @@ const Provider = ({ children }) => {
   const [showAAA, setShowAAA] = useState(false);
   const [showAPP, setShowAPP] = useState(false);
   const [showAPA, setShowAPA] = useState(false);
+  const [modalGeneralShow, setModalGeneralShow] = useState(false);
+  const [modalIAShow, setModalIAShow] = useState(false);
 
 
   const shuffle = array => {
@@ -409,6 +411,24 @@ const Provider = ({ children }) => {
 
 
 
+  const handleGeneralShow = () => setModalGeneralShow(true);
+  const handleGeneralClose = () => setModalGeneralShow(false);
+
+  const showGeneralModal = () => {
+    handleGeneralShow();
+  };
+
+  const handleIAShow = () => setModalIAShow(true);
+  const handleIAClose = () => setModalIAShow(false);
+
+  const showIAModal = () => {
+    handleIAShow();
+  };
+
+
+
+
+
   return (
     <Context.Provider
       value={{
@@ -471,7 +491,15 @@ const Provider = ({ children }) => {
         architecturalPhotographyPrompt,
         architecturalPhotographyAction,
         APcardDeck,
-        setAPCardDeck
+        setAPCardDeck,
+        modalGeneralShow,
+        handleGeneralClose,
+        handleGeneralShow,
+        showGeneralModal,
+        modalIAShow,
+        handleIAClose,
+        handleIAShow,
+        showIAModal
       }}
     >
       {children}

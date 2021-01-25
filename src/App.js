@@ -24,6 +24,8 @@ import AuralArchitecturesPrompt from "./Components/AuralArchitectures/Prompt";
 import AuralArchitecturesAction from "./Components/AuralArchitectures/Action";
 import ArchitecturalPhotographyPrompt from "./Components/ArchitecturalPhotography/Prompt";
 import ArchitecturalPhotographyAction from "./Components/ArchitecturalPhotography/Action";
+import GeneralModal from "./Components/Modal/GeneralModal";
+import IAModal from "./Components/Modal/IAModal";
 
 function App() {
   return (
@@ -58,6 +60,8 @@ function App() {
           </div>
         </Col>
       </Row>
+      <GeneralModal />
+      <IAModal />
     </Provider>
   );
 }

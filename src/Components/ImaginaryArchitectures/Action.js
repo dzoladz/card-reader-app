@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const ImaginaryArchitecturesAction = () => {
-  const { showIAA, IAcardDeck } = useContext(
+  const { showIAA, IAcardDeck, showIAModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const ImaginaryArchitecturesAction = () => {
             alt={IAcardDeck[0].name}
             delay={0}
             value={IAcardDeck[0].id}
+            onClick={() => showIAModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">
