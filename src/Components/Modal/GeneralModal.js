@@ -28,7 +28,7 @@ const GeneralModal = () => {
               <hr />
               <h2 class="h4">Download the Deck</h2>
                   <p>
-                    You can <a href="../images/speculative-deck-images.zip">download the deck</a>
+                    You can <a href="/images/speculative-deck-images.zip">download the deck</a>
                   </p>
               <hr />
             </Col>

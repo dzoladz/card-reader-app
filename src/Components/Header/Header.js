@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Jumbotron fluid className="jumbotron text-center p-3">
       <h1 className="display-4 text-light">Speculative Card Deck
-      <img src="../icons/info-circle.svg" alt="information icon" class="general-icon" onClick={() => showGeneralModal()} />
+      <img src="/icons/info-circle.svg" alt="information icon" class="general-icon" onClick={() => showGeneralModal()} />
       </h1>
     </Jumbotron>
   );
