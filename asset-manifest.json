@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/card-reader-app/static/css/main.b5cbb14c.chunk.css",
-    "main.js": "/card-reader-app/static/js/main.96d57fa2.chunk.js",
-    "main.js.map": "/card-reader-app/static/js/main.96d57fa2.chunk.js.map",
+    "main.css": "/card-reader-app/static/css/main.e3d0f4dc.chunk.css",
+    "main.js": "/card-reader-app/static/js/main.bd8892d6.chunk.js",
+    "main.js.map": "/card-reader-app/static/js/main.bd8892d6.chunk.js.map",
     "runtime-main.js": "/card-reader-app/static/js/runtime-main.18dd0bc0.js",
     "runtime-main.js.map": "/card-reader-app/static/js/runtime-main.18dd0bc0.js.map",
-    "static/js/2.91087e17.chunk.js": "/card-reader-app/static/js/2.91087e17.chunk.js",
-    "static/js/2.91087e17.chunk.js.map": "/card-reader-app/static/js/2.91087e17.chunk.js.map",
+    "static/js/2.c97332dd.chunk.js": "/card-reader-app/static/js/2.c97332dd.chunk.js",
+    "static/js/2.c97332dd.chunk.js.map": "/card-reader-app/static/js/2.c97332dd.chunk.js.map",
     "index.html": "/card-reader-app/index.html",
-    "precache-manifest.13c7651f080602718f8b00ed815b9207.js": "/card-reader-app/precache-manifest.13c7651f080602718f8b00ed815b9207.js",
+    "precache-manifest.c7ddf7dfbf0942942bdeab8827a0875a.js": "/card-reader-app/precache-manifest.c7ddf7dfbf0942942bdeab8827a0875a.js",
     "service-worker.js": "/card-reader-app/service-worker.js",
-    "static/css/main.b5cbb14c.chunk.css.map": "/card-reader-app/static/css/main.b5cbb14c.chunk.css.map",
-    "static/js/2.91087e17.chunk.js.LICENSE": "/card-reader-app/static/js/2.91087e17.chunk.js.LICENSE"
+    "static/css/main.e3d0f4dc.chunk.css.map": "/card-reader-app/static/css/main.e3d0f4dc.chunk.css.map",
+    "static/js/2.c97332dd.chunk.js.LICENSE": "/card-reader-app/static/js/2.c97332dd.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.18dd0bc0.js",
-    "static/js/2.91087e17.chunk.js",
-    "static/css/main.b5cbb14c.chunk.css",
-    "static/js/main.96d57fa2.chunk.js"
+    "static/js/2.c97332dd.chunk.js",
+    "static/css/main.e3d0f4dc.chunk.css",
+    "static/js/main.bd8892d6.chunk.js"
   ]
 }
