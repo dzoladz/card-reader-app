@@ -12,23 +12,25 @@ const GeneralModal = () => {
         <Container>
           <Row>
             <Col xs={12}>
-              <h1>General Modal</h1>
+              <h1>Information</h1>
               <hr />
-              <p>Contact</p>
+              <h2 class="h3">Contact</h2>
+              <div>
+                <span>Mackenzie Salisbury - <a href="mailto:ssalis1@saic.edu">ssalis1@saic.edu</a></span>
+                    <br/>
+                <span>Shannon Marie Robinson - <a href="mailto:smrob@upenn.edu">smrob@upenn.edu</a></span>
+              </div>
               <hr />
-              <p>Submit a Question</p>
+              <h2 class="h4">Submit a Question</h2>
+                <p>
+                    We are interested in your thoughts: <a href="http://www.example.com">form</a>
+                </p>
               <hr />
-              <p>
-              <img src="../icons/cloud-arrow-down.svg" alt="download icon" class="icon" />
-              Download the Deck
-              </p>
+              <h2 class="h4">Download the Deck</h2>
+                  <p>
+                    You can <a href="http://www.example.com">download the deck</a>
+                  </p>
               <hr />
-            </Col>
-            <Col xs={8} sm={4} className="mx-auto p-0">
-              <p>Left Side</p>
-            </Col>
-            <Col xs={12} sm={8}>
-              <p>Right side</p>
             </Col>
           </Row>
         </Container>

@@ -14,14 +14,10 @@ const IAModal = () => {
             <Col xs={12}>
               <h1>Information Architectures</h1>
               <hr />
-              <p>References</p>
+              <h2 class="h4">References</h2>
+              <p class="citation">Feo, Roberto, and Rosario Hurtado. 2009. <a href="http://www.worldcat.org/oclc/913429960" target="_blank" rel="noopener noreferrer">El Ultimo Grito: Abandon Architectures</a>. Miami: Name Publications.</p>
+              <p class="citation">Lukić, Branko, and Barry Kātz. 2011. <a href="http://www.worldcat.org/oclc/873806559" target="_blank" rel="noopener noreferrer">Nonobject</a>. Cambridge, Mass.: MIT Press.</p>
               <hr />
-            </Col>
-            <Col xs={8} sm={4} className="mx-auto p-0">
-              <p>Left Side</p>
-            </Col>
-            <Col xs={12} sm={8}>
-              <p>Right side</p>
             </Col>
           </Row>
         </Container>
