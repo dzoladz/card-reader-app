@@ -21,9 +21,9 @@ const GeneralModal = () => {
                 <span>Shannon Marie Robinson - <a href="mailto:smrob@upenn.edu">smrob@upenn.edu</a></span>
               </div>
               <hr />
-              <h2 class="h4">Submit a Question</h2>
+              <h2 class="h4">Share Your Thoughts</h2>
                 <p>
-                    We are interested in your thoughts: <a href="http://www.example.com">form</a>
+                    Have an idea for a prompt or action? <a href="https://forms.gle/CMBr8WPVhQe5TKP87">Let us know!</a>
                 </p>
               <hr />
               <h2 class="h4">Download the Deck</h2>
