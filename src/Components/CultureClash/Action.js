@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const CultureClashAction = () => {
-  const { showCCA, CCcardDeck } = useContext(
+  const { showCCA, CCcardDeck, showCCModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const CultureClashAction = () => {
             alt={CCcardDeck[0].name}
             delay={0}
             value={CCcardDeck[0].id}
+            onClick={() => showCCModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Modal, Container, Row, Col, Button } from "react-bootstrap";
 import { Context } from "../../AppContext";
 
-const IGModal = () => {
+const STModal = () => {
   const { modalSTShow, handleSTClose } = useContext(Context);
 
 

@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const SlowTechnologyAction = () => {
-  const { showSTA, STcardDeck } = useContext(
+  const { showSTA, STcardDeck, showSTModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const SlowTechnologyAction = () => {
             alt={STcardDeck[0].name}
             delay={0}
             value={STcardDeck[0].id}
+            onClick={() => showSTModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">

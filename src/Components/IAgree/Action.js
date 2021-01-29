@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const IAgreeAction = () => {
-  const { showIGA, IGcardDeck } = useContext(
+  const { showIGA, IGcardDeck, showIGModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const IAgreeAction = () => {
             alt={IGcardDeck[0].name}
             delay={0}
             value={IGcardDeck[0].id}
+            onClick={() => showIGModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">

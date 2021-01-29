@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const UnitedMicroKingdomsAction = () => {
-  const { showUMKA, UMKcardDeck } = useContext(
+  const { showUMKA, UMKcardDeck, showUMKModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const UnitedMicroKingdomsAction = () => {
             alt={UMKcardDeck[0].name}
             delay={0}
             value={UMKcardDeck[0].id}
+            onClick={() => showUMKModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">

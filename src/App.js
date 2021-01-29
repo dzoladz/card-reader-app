@@ -26,6 +26,15 @@ import ArchitecturalPhotographyPrompt from "./Components/ArchitecturalPhotograph
 import ArchitecturalPhotographyAction from "./Components/ArchitecturalPhotography/Action";
 import GeneralModal from "./Components/Modal/GeneralModal";
 import IAModal from "./Components/Modal/IAModal";
+import AAModal from "./Components/Modal/AAModal";
+import APModal from "./Components/Modal/APModal";
+import CCModal from "./Components/Modal/CCModal";
+import IGModal from "./Components/Modal/IGModal";
+import PDModal from "./Components/Modal/PDModal";
+import SCModal from "./Components/Modal/SCModal";
+import STModal from "./Components/Modal/STModal";
+import UEModal from "./Components/Modal/UEModal";
+import UMKModal from "./Components/Modal/UMKModal";
 
 function App() {
   return (
@@ -62,6 +71,15 @@ function App() {
       </Row>
       <GeneralModal />
       <IAModal />
+      <AAModal />
+      <APModal />
+      <CCModal />
+      <IGModal />
+      <PDModal />
+      <SCModal />
+      <STModal />
+      <UEModal />
+      <UMKModal />
     </Provider>
   );
 }

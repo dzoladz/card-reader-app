@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const AuralArchitecturesAction = () => {
-  const { showAAA, AAcardDeck } = useContext(
+  const { showAAA, AAcardDeck, showAAModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const AuralArchitecturesAction = () => {
             alt={AAcardDeck[0].name}
             delay={0}
             value={AAcardDeck[0].id}
+            onClick={() => showAAModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">

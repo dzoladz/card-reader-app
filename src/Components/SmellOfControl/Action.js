@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const SmellOfControlAction = () => {
-  const { showSCA, SCcardDeck } = useContext(
+  const { showSCA, SCcardDeck, showSCModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const SmellOfControlAction = () => {
             alt={SCcardDeck[0].name}
             delay={0}
             value={SCcardDeck[0].id}
+            onClick={() => showSCModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">

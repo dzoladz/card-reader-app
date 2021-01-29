@@ -45,6 +45,15 @@ const Provider = ({ children }) => {
   const [showAPA, setShowAPA] = useState(false);
   const [modalGeneralShow, setModalGeneralShow] = useState(false);
   const [modalIAShow, setModalIAShow] = useState(false);
+  const [modalAAShow, setModalAAShow] = useState(false);
+  const [modalAPShow, setModalAPShow] = useState(false);
+  const [modalCCShow, setModalCCShow] = useState(false);
+  const [modalIGShow, setModalIGShow] = useState(false);
+  const [modalPDShow, setModalPDShow] = useState(false);
+  const [modalSCShow, setModalSCShow] = useState(false);
+  const [modalSTShow, setModalSTShow] = useState(false);
+  const [modalUEShow, setModalUEShow] = useState(false);
+  const [modalUMKShow, setModalUMKShow] = useState(false);
 
 
   const shuffle = array => {
@@ -425,7 +434,76 @@ const Provider = ({ children }) => {
     handleIAShow();
   };
 
+  const handleAAShow = () => setModalAAShow(true);
+  const handleAAClose = () => setModalAAShow(false);
 
+  const showAAModal = () => {
+    handleAAShow();
+  };
+
+
+  const handleAPShow = () => setModalAPShow(true);
+  const handleAPClose = () => setModalAPShow(false);
+
+  const showAPModal = () => {
+    handleAPShow();
+  };
+
+
+  const handleCCShow = () => setModalCCShow(true);
+  const handleCCClose = () => setModalCCShow(false);
+
+  const showCCModal = () => {
+    handleCCShow();
+  };
+
+
+  const handleIGShow = () => setModalIGShow(true);
+  const handleIGClose = () => setModalIGShow(false);
+
+  const showIGModal = () => {
+    handleIGShow();
+  };
+
+
+  const handlePDShow = () => setModalPDShow(true);
+  const handlePDClose = () => setModalPDShow(false);
+
+  const showPDModal = () => {
+    handlePDShow();
+  };
+
+
+  const handleSCShow = () => setModalSCShow(true);
+  const handleSCClose = () => setModalSCShow(false);
+
+  const showSCModal = () => {
+    handleSCShow();
+  };
+
+
+  const handleSTShow = () => setModalSTShow(true);
+  const handleSTClose = () => setModalSTShow(false);
+
+  const showSTModal = () => {
+    handleSTShow();
+  };
+
+
+  const handleUEShow = () => setModalUEShow(true);
+  const handleUEClose = () => setModalUEShow(false);
+
+  const showUEModal = () => {
+    handleUEShow();
+  };
+
+
+  const handleUMKShow = () => setModalUMKShow(true);
+  const handleUMKClose = () => setModalUMKShow(false);
+
+  const showUMKModal = () => {
+    handleUMKShow();
+  };
 
 
 
@@ -499,7 +577,43 @@ const Provider = ({ children }) => {
         modalIAShow,
         handleIAClose,
         handleIAShow,
-        showIAModal
+        showIAModal,
+        modalAAShow,
+        handleAAClose,
+        handleAAShow,
+        showAAModal,
+        modalAPShow,
+        handleAPClose,
+        handleAPShow,
+        showAPModal,
+        modalCCShow,
+        handleCCClose,
+        handleCCShow,
+        showCCModal,
+        modalIGShow,
+        handleIGClose,
+        handleIGShow,
+        showIGModal,
+        modalPDShow,
+        handlePDClose,
+        handlePDShow,
+        showPDModal,
+        modalSCShow,
+        handleSCClose,
+        handleSCShow,
+        showSCModal,
+        modalSTShow,
+        handleSTClose,
+        handleSTShow,
+        showSTModal,
+        modalUEShow,
+        handleUEClose,
+        handleUEShow,
+        showUEModal,
+        modalUMKShow,
+        handleUMKClose,
+        handleUMKShow,
+        showUMKModal
       }}
     >
       {children}

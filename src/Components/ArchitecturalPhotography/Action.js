@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const ArchitecturalPhotographyAction = () => {
-  const { showAPA, APcardDeck } = useContext(
+  const { showAPA, APcardDeck, showAPModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const ArchitecturalPhotographyAction = () => {
             alt={APcardDeck[0].name}
             delay={0}
             value={APcardDeck[0].id}
+            onClick={() => showAPModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">

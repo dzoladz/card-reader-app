@@ -12,7 +12,7 @@ const UMKModal = () => {
         <Container>
           <Row>
             <Col xs={12}>
-              <h1>United Micro Kingdowms</h1>
+              <h1>United Micro Kingdoms</h1>
               <hr />
               <h2 class="h4">References</h2>
               <p class="citation"><a href="" target="_blank" rel="noopener noreferrer"></a></p>

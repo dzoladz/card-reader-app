@@ -4,7 +4,7 @@ import { Context } from "../../AppContext";
 import SingleCard from "../SingleCard/SingleCard";
 
 const PatentDependingAction = () => {
-  const { showPDA, PDcardDeck } = useContext(
+  const { showPDA, PDcardDeck, showPDModal } = useContext(
     Context
   );
 
@@ -21,6 +21,7 @@ const PatentDependingAction = () => {
             alt={PDcardDeck[0].name}
             delay={0}
             value={PDcardDeck[0].id}
+            onClick={() => showPDModal()}
           />
         </Col>
         <Col xs={12} sm={8} md={9} className="tarot-read animated fadeIn delay-1s slower">
