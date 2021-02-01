@@ -15,8 +15,9 @@ const UEModal = () => {
               <h1>How to Organize a Public Library</h1>
               <hr />
               <h2 class="h4">References</h2>
-              <p class="citation"><a href="" target="_blank" rel="noopener noreferrer"></a></p>
-              <p class="citation"><a href="" target="_blank" rel="noopener noreferrer"></a></p>
+              <p className="citation">Eco, Umberto. 1994. <a href="http://www.worldcat.org/oclc/1204229813" target="_blank" rel="noopener noreferrer"><em>How to Travel with a Salmon</em></a>. New York: Harcourt, Brace.</p>
+              <p className="citation">Höfer, Candida. 2005. <a href="http://www.worldcat.org/oclc/1078884037" target="_blank" rel="noopener noreferrer"><em>Libraries</em></a>. Munich: Schirmer/Mosel.</p>
+              <p className="citation">Krippendorf, Klaus. 2006. <a href="http://www.worldcat.org/oclc/937351556" target="_blank" rel="noopener noreferrer"><em>The Semantic Turn: A New Foundation for Design</em></a>. Boca Raton, FL: CRC Press.</p>
               <hr />
             </Col>
           </Row>

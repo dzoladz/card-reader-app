@@ -15,8 +15,7 @@ const UMKModal = () => {
               <h1>United Micro Kingdoms</h1>
               <hr />
               <h2 class="h4">References</h2>
-              <p class="citation"><a href="" target="_blank" rel="noopener noreferrer"></a></p>
-              <p class="citation"><a href="" target="_blank" rel="noopener noreferrer"></a></p>
+              <p className="citation">Budd, John M. 2003. “<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/603373" target="_blank" rel="noopener noreferrer">The Library, Praxis, and Symbolic Power</a>.” <em>Library Quarterly: Information, Community, Policy</em> 73 (1): 19-32.</p>
               <hr />
             </Col>
           </Row>
