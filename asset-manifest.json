@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/card-reader-app/static/css/main.e3d0f4dc.chunk.css",
-    "main.js": "/card-reader-app/static/js/main.ae38c84c.chunk.js",
-    "main.js.map": "/card-reader-app/static/js/main.ae38c84c.chunk.js.map",
-    "runtime-main.js": "/card-reader-app/static/js/runtime-main.18dd0bc0.js",
-    "runtime-main.js.map": "/card-reader-app/static/js/runtime-main.18dd0bc0.js.map",
-    "static/js/2.f602fee2.chunk.js": "/card-reader-app/static/js/2.f602fee2.chunk.js",
-    "static/js/2.f602fee2.chunk.js.map": "/card-reader-app/static/js/2.f602fee2.chunk.js.map",
+    "main.css": "/card-reader-app/static/css/main.a03b83a3.chunk.css",
+    "main.js": "/card-reader-app/static/js/main.55893500.chunk.js",
+    "main.js.map": "/card-reader-app/static/js/main.55893500.chunk.js.map",
+    "runtime-main.js": "/card-reader-app/static/js/runtime-main.13032425.js",
+    "runtime-main.js.map": "/card-reader-app/static/js/runtime-main.13032425.js.map",
+    "static/js/2.ee20d003.chunk.js": "/card-reader-app/static/js/2.ee20d003.chunk.js",
+    "static/js/2.ee20d003.chunk.js.map": "/card-reader-app/static/js/2.ee20d003.chunk.js.map",
     "index.html": "/card-reader-app/index.html",
-    "precache-manifest.712a9bb0f1c8abdea0e8b32fefd70619.js": "/card-reader-app/precache-manifest.712a9bb0f1c8abdea0e8b32fefd70619.js",
+    "precache-manifest.bfb22bc693f91950111a0cf15d992ef5.js": "/card-reader-app/precache-manifest.bfb22bc693f91950111a0cf15d992ef5.js",
     "service-worker.js": "/card-reader-app/service-worker.js",
-    "static/css/main.e3d0f4dc.chunk.css.map": "/card-reader-app/static/css/main.e3d0f4dc.chunk.css.map",
-    "static/js/2.f602fee2.chunk.js.LICENSE": "/card-reader-app/static/js/2.f602fee2.chunk.js.LICENSE"
+    "static/css/main.a03b83a3.chunk.css.map": "/card-reader-app/static/css/main.a03b83a3.chunk.css.map",
+    "static/js/2.ee20d003.chunk.js.LICENSE.txt": "/card-reader-app/static/js/2.ee20d003.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.18dd0bc0.js",
-    "static/js/2.f602fee2.chunk.js",
-    "static/css/main.e3d0f4dc.chunk.css",
-    "static/js/main.ae38c84c.chunk.js"
+    "static/js/runtime-main.13032425.js",
+    "static/js/2.ee20d003.chunk.js",
+    "static/css/main.a03b83a3.chunk.css",
+    "static/js/main.55893500.chunk.js"
   ]
 }
