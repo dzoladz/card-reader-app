@@ -3,12 +3,12 @@
     "id": 0,
     "name": "Card 0",
     "image": "images/IAgree/2.png",
-    "action": "Select a popular library vendor and examine their terms of service and/or privacy policy. Use the language of one of the policies to write a poem (may be concrete poetry if you’d like to incorporate visuals) about information access. (Polisis: ProQuest, EBSCOhost, JSTOR)"
+    "action": "Emphasize the Flaws within popular library vendor terms of services. Review the documents and find the words that are problematic. Create a word cloud or a concrete poem with these words or concepts."
   }, {
     "id": 1,
     "name": "Card 1",
     "image": "images/IAgree/3.png",
-    "action": "Emphasize the Flaws within popular library vendor terms of services. Review the documents and find the words that are problematic. Create a word cloud or a concrete poem with these words or concepts."
+    "action": "  Select a popular library vendor and examine their terms of service and/or privacy policy. Use the language of one of the policies to write a poem (may be concrete poetry if you’d like to incorporate visuals) about information access. (Polisis: ProQuest, EBSCOhost, JSTOR)"
   }, {
     "id": 2,
     "name": "Card 2",
